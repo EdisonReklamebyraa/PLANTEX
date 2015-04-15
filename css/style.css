@@ -326,13 +326,42 @@ ul.pure-g li.pos_6{
 
 .PhotoBanner {
     background: transparent url('../images/Plantex_shutterstock_27332227.jpg') 0 50% no-repeat fixed;
-    text-align: center;
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Plantex_shutterstock_27332227.jpg', sizingMethod='scale');
     height: 200px;
     width: 100%;
     display: table;
+    color: #FFF;
 }
+
+.PhotoBanner legend{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFF;
+    border: 0;
+}
+
+
+.PhotoBanner input[type="text"] , .PhotoBanner .pure-button{
+      border-radius: 1rem;
+}
+
+.PhotoBanner .pure-button{
+    padding: 0.5em 2em;
+    background-color: #8bb532;
+    font-weight: 900;
+    
+}
+
+.PhotoBanner label{
+    margin: 0.5em 0;
+}
+
+.PhotoBanner .content{
+    margin: 3em auto 0;
+    
+}
+
 
 .banner-head {
     display: table-cell;
@@ -346,7 +375,6 @@ ul.pure-g li.pos_6{
 
 .banner {
     margin: 0;
-    margin-bottom: 3em;    
     background: linear-gradient(to right, #ececec 0%,#ececec 50%,#e5e5e5 50%, #e5e5e5 100%);    
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#e5e5e5',GradientType=1 ); 
 }
