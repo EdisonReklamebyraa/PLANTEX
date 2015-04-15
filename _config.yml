@@ -1,0 +1,5 @@
+markdown: rdiscount
+highlighter: false
+exclude: ['node_modules']
+include: ['_pages']
+baseurl: '/Plantex' 

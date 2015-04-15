@@ -1,0 +1,14 @@
+{
+  "name": "EdisonMenlo",
+  "version": "0.0.1",
+  "author": "Mario Michelli",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.2",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-autoprefixer": "~0.4.0",
+    "matchdep": "*",
+    "autoprefixer-core": "*"
+  }
+}

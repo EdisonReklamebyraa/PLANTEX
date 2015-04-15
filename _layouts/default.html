@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+
+    <title>Isola Plantex®  {{ page.title }}</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.png" />
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/grid.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css?v=0" type="text/css"  charset="utf-8">
+
+
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
+
+    <!--[if lte IE 8]>
+        
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+        
+        <![endif]-->
+    <!--[if gt IE 8]><!-->
+        
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+        
+        <!--<![endif]--> 
+        
+  </head>
+
+  <body>
+       
+
+     
+    <div class="pure-menu pure-menu-horizontal  ">
+
+      
+      <div class="isola grey">
+        <div class="l-content">    
+          <a href="#" class="pure-menu-heading">
+            <img src="{{ site.baseurl }}/images/logo.png" class="logo" />
+          </a>    
+        </div>    
+      </div>
+
+
+    </div>
+
+    
+    <div class="custom-menu-wrapper blue pure-menu-horizontal ">
+      <div class="l-content">  
+        <div class="pure-u-lg-1-{{ site.pages.size|minus:1}}   pure-menu custom-menu custom-menu-top"><a href="#" class="pure-menu-heading custom-menu-brand"><a href="{{ site.baseurl }}/" class="pure-menu-link brand"><span>Isola Plantex <sup>®</sup></span></a></a><a href="#" class="custom-menu-toggle" id="toggle"><s class="bar"></s><s class="bar"></s> <s class="bar"></s><span class="meny">MENY</span></a></div><div class="pure-u-lg-{{ site.pages.size|minus:2}}-{{ site.pages.size|minus:1}}   pure-menu-scrollable custom-menu custom-menu-bottom custom-menu-tucked" id="tuckedMenu"><div class="menu"><div class="l-content">      
+              <ul class="pure-g">
+                {% assign pages = site.pages | sort:"weight"  %}
+                {% for node in pages %}
+                  {% if node.title != nil and node.url != '/' and node.url != '/404.html' %}
+                    {% capture nodediff %}{{ page.url | remove:node.url }}{% endcapture %}
+                      <li class="pure-u-lg-1-{{ site.pages.size|minus:2}} pos_{{ forloop.index  }} {% if nodediff != page.url %} pure-menu-selected{% endif %} ">
+                        <a href="{{ site.baseurl }}{{ node.url }}" class="pure-menu-link">{{ node.title }} </a>
+                      </li>	                   
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+         {{ content }}
+
+
+
+
+    <div id="Footer" class="light_grey">
+      
+    </div>
+
+    
+    <script src="{{ site.baseurl }}/js/application.js?c=0" type="text/javascript" charset="utf-8"></script>
+    <script src="//use.typekit.net/bsj7gxl.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+  </body>
+</html>

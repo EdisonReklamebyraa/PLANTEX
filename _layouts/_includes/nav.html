@@ -1,0 +1,8 @@
+{% for node in site.pages %}
+  {% if node.title != nil and node.url != '/' %}
+    {% capture nodediff %}{{ page.url | remove:node.url }}{% endcapture %}
+      <li class="pure-u-lg-1-{{ site.pages.size|minus:1}} pos_{{ forloop.index  }}">
+        <a href="{{ node.url }}" class="pure-menu-link {% if nodediff != page.url %}active{% endif %} ">{{ node.title }}</a>
+      </li>	                   
+  {% endif %}
+{% endfor %}
