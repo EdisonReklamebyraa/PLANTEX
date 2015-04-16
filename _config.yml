@@ -2,4 +2,4 @@ markdown: rdiscount
 pygments: false
 exclude: ['node_modules']
 include: ['_pages']
-baseurl: '/Plantex' 
+baseurl: '' 
