@@ -345,8 +345,9 @@ ul.pure-g li.pos_6{
 }
 
 
-.PhotoBanner input[type="text"] , .PhotoBanner .pure-button{
-      border-radius: 1rem;
+.PhotoBanner input[type="text"], .PhotoBanner input[type="email"], .PhotoBanner .pure-button{
+    border-radius: 1rem;
+    color: #000;
 }
 
 .PhotoBanner .pure-button{
