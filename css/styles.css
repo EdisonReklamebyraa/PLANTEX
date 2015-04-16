@@ -162,9 +162,7 @@ hr{
     margin: 2em 0;
     padding: 0;
 }
-.padding{
-    padding: 1.5em 0 2em 2em;
-}
+
 .box{
     border-left: solid 0.5em #8bb532;
     padding: 1px 2em;
@@ -678,6 +676,9 @@ ul.pure-g li.pos_6{
         padding: 5px;
         margin-top: 2em;
         right: 5em;
+    }
+    .padding{
+        padding: 1.5em 0 2em 2em;
     }
     .custom-menu-wrapper .l-content, .pure-menu .l-content , .banner .l-content, .content .l-content {
 
