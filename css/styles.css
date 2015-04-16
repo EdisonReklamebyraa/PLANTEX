@@ -39,7 +39,9 @@ h3 a span{
     color: #8bb532;
     
 }
-
+.video{
+    padding: 1em 0 1em;
+}
 
  .content ul li
  {
@@ -785,7 +787,7 @@ ul.pure-g li.pos_6{
         text-align: center;
     }
 
-   
+ 
 
     .custom-menu-wrapper .l-content, .pure-menu .l-content , .banner .l-content, .content .l-content {
         overflow: hidden;
@@ -800,7 +802,7 @@ ul.pure-g li.pos_6{
      .banner .caption {
         overflow: hidden;
         padding: 1em 2em 1em 1em;
-    }
+    } 
 
      .banner  {      
         margin-bottom: 0em;
