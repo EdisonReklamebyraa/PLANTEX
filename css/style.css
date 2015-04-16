@@ -23,6 +23,18 @@ p {
     padding-right: 1em;
 }
 
+a{
+    text-decoration: none;
+}
+h3 a{
+    color: black;
+    
+}
+h3 a span{
+    color: #8bb532;
+    
+}
+
 
  .content ul li
  {
@@ -294,7 +306,8 @@ ul.pure-g li.pos_6{
 }
 
 .light{
-    font-weight: 100; 
+    font-weight: 100;
+    font-size: 1em;
 }
 
 .grey{
@@ -388,7 +401,7 @@ ul.pure-g li.pos_6{
 
 .banner .caption{
     padding: 2em 0;
-    background: #ececec url('../images/banner-bg.png') 100% 50% repeat-y ;
+    background: #ececec url('../images/banner-bg.png') 100% 0 repeat-y ;
 
 }
 
