@@ -178,7 +178,6 @@ hr{
  */
 .custom-menu-wrapper .l-content, .pure-menu .l-content , .banner .l-content, .content .l-content {
     max-width: 980px;
-    position:relative;
 }
 
 
@@ -454,13 +453,6 @@ ul.pure-g li.pos_6{
  * -- PRICING TABLE WRAPPER --
  * This element wraps up all the pricing table elements
  */
-.pricing-tables,
-.information,
-.f-content,
-.content{
-    max-width: 980px;
-    margin: 4em auto 0;
-}
 
 .pricing-tables {
     margin-bottom: 1em;
@@ -685,6 +677,17 @@ ul.pure-g li.pos_6{
         margin-top: 2em;
         right: 5em;
     }
+    .custom-menu-wrapper .l-content, .pure-menu .l-content , .banner .l-content, .content .l-content {
+
+        position:relative;
+    }
+    .pricing-tables,
+    .information,
+    .f-content,
+    .content{
+        max-width: 980px;
+        margin: 4em auto 0;
+    }
 
 
     .menu ul.pure-g li a,
@@ -778,7 +781,9 @@ ul.pure-g li.pos_6{
         margin-top: 2em;
         float: right;
     }
-
+    .f-content{
+        text-align: center;
+    }
 
    
 
@@ -788,7 +793,7 @@ ul.pure-g li.pos_6{
 
      .content, .information{
         overflow: hidden;
-        padding: 1em;
+        padding: 0.5em 1em;
     }
 
 
