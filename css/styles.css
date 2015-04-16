@@ -349,10 +349,8 @@ ul.pure-g li.pos_6{
 
 
 #Footer{
-    min-height: 12em;
-    margin-top: 2em;
+    margin-top: 2em;    
 }
-
 
 
 
@@ -458,6 +456,7 @@ ul.pure-g li.pos_6{
  */
 .pricing-tables,
 .information,
+.f-content,
 .content{
     max-width: 980px;
     margin: 4em auto 0;
@@ -573,13 +572,18 @@ ul.pure-g li.pos_6{
 }
 
 .footer {
-    background: #111;
+    font-size: 0.9em;
     color: #888;
-    text-align: center;
 }
 .footer a {
-    color: #ddd;
+    color: #000;
 }
+
+.footer p{
+    padding: 0.2em 0;
+}
+
+
 
 /**
   menu Copy 
