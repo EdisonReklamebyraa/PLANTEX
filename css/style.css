@@ -270,7 +270,7 @@ ul.pure-g li.pos_6{
     padding: 0 10px ;
     vertical-align: middle;
     font-weight: bold;
-    font-size: 1.15rem;
+    font-size: 1rem;
 }
 
 
@@ -347,6 +347,10 @@ ul.pure-g li.pos_6{
 
 .PhotoBanner input[type="text"], .PhotoBanner input[type="email"], .PhotoBanner .pure-button{
     border-radius: 1rem;
+}
+
+
+.PhotoBanner input[type="text"], .PhotoBanner input[type="email"]{
     color: #000;
 }
 
