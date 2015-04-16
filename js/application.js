@@ -5,17 +5,30 @@ document.getElementById('toggle').addEventListener('click', function (e) {
 });
 
 var dts = document.getElementsByTagName("dt");
-
+var last = null;
 for(var i = 0; i < dts.length; i++) {
-
     dts[i].addEventListener('click', function (e) {
-
         e.target.classList.toggle("active");
-        e.target.nextElementSibling.classList.toggle("active");
-        e.stopImmediatePropagation()
+        var active = e.target.nextElementSibling.classList.toggle("active");
+
+        e.stopImmediatePropagation();
+
+        if(active && e.target && e.target.dataset  && e.target.dataset["image"]){
+            document.getElementById("ReF").src = e.target.dataset["image"];
+        }
+
+        if(last && last !== e.target){
+            last.nextElementSibling.classList.toggle("active");
+            last.classList.toggle("active");
+        }
+
+        if(last != e.target)
+          last = e.target;
+        else
+          last = null;
+
+
     })
-
-
 }
 
 
