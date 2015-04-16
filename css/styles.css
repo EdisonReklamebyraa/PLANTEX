@@ -161,13 +161,16 @@ hr{
     padding: 0;
 }
 .padding{
-    padding: 2em;
+    padding: 1.5em 0 2em 2em;
 }
 .box{
     border-left: solid 0.5em #8bb532;
     padding: 1px 2em;
 }
-
+#ReF{
+    -webkit-border-radius: 1em;
+            border-radius: 1em;
+}
 
 /*
  * -- MENU STYLES --
