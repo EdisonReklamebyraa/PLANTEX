@@ -27,9 +27,14 @@ a{
     text-decoration: none;
 }
 h3 a{
-    color: black;
-    
+    color: black;    
 }
+
+h3 a:hover{
+    color: #8bb532;    
+}
+
+
 h3 a span{
     color: #8bb532;
     
