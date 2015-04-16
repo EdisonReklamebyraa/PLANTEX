@@ -145,6 +145,7 @@ hr{
  */
 .custom-menu-wrapper .l-content, .pure-menu .l-content , .banner .l-content, .content .l-content {
     max-width: 980px;
+    position:relative;
 }
 
 
@@ -286,6 +287,8 @@ ul.pure-g li.pos_6{
 }
 
 
+
+
 .gt{
     color: #8bb532;
 }
@@ -358,8 +361,7 @@ ul.pure-g li.pos_6{
 }
 
 .PhotoBanner .content{
-    margin: 3em auto 0;
-    
+    margin: 3em auto 0;   
 }
 
 
@@ -633,6 +635,13 @@ ul.pure-g li.pos_6{
 }
 
 @media (min-width: 64em) {
+    .bubble{
+        
+        position: absolute;    
+        padding: 5px;
+        margin-top: 2em;
+        right: 5em;
+    }
 
 
     .menu ul.pure-g li a,
@@ -704,7 +713,15 @@ ul.pure-g li.pos_6{
         padding: 0 1rem ;
     }
    
-    
+
+    .bubble{
+        
+        display: inline-block;
+        padding: 5px;
+        margin-top: 2em;
+        float: right;
+    }
+
 
    
 
