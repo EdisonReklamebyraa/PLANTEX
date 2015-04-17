@@ -365,13 +365,8 @@ ul.pure-g li.pos_6{
 }
 
  @media (max-width: @iphone-screen) {
+     height: auto;
      
-     .PhotoBanner {
-
-        background-attachment: scroll;
-        background-size: 366px 203px;
-     }
-
  }
 
 .PhotoBanner legend{
