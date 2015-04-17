@@ -364,6 +364,9 @@ ul.pure-g li.pos_6{
 
  @media (max-width: @iphone-screen) {
      height: auto;
+     .PhotoBanner {
+         height: auto;
+     }
      
  }
 
@@ -786,7 +789,9 @@ ul.pure-g li.pos_6{
     .f-content{
         text-align: center;
     }
-
+    .l-box{
+        font-size: 0.8em;
+    }
  
 
     .custom-menu-wrapper .l-content, .pure-menu .l-content , .banner .l-content, .content .l-content {
