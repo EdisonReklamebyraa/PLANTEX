@@ -353,7 +353,7 @@ ul.pure-g li.pos_6{
  */
 
 .PhotoBanner {
-    background: transparent url('../images/Plantex_shutterstock_27332227.jpg') 0 50% no-repeat fixed;
+    background: transparent url('../images/Plantex_shutterstock_27332227.jpg') 50% 50% no-repeat fixed;
     background-size: cover;
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Plantex_shutterstock_27332227.jpg', sizingMethod='scale');
     height: 200px;
