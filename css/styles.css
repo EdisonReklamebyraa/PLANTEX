@@ -359,7 +359,8 @@ ul.pure-g li.pos_6{
  */
 
 .PhotoBanner {
-    background: transparent url('../images/Plantex_shutterstock_27332227.jpg') 50% 50% no-repeat fixed;
+    background: transparent url('../images/Plantex_shutterstock_27332227.jpg') 50% 50% no-repeat;
+    
     background-size: cover;
 
                                 
@@ -370,13 +371,7 @@ ul.pure-g li.pos_6{
     color: #FFF;
 }
 
- @media (max-width: @iphone-screen) {
-     height: auto;
-     .PhotoBanner {
-         height: auto;
-     }
-     
- }
+
 
 .PhotoBanner legend{
     font-size: 2rem;
@@ -685,7 +680,9 @@ ul.pure-g li.pos_6{
         margin: 1em 2em 0.5em 0;
     }
 
-    
+    .PhotoBanner{
+        background-attachment:  fixed;
+    }
     .l-box dd{
         
         padding-right: 4em;
