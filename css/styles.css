@@ -24,8 +24,14 @@ p {
 }
 
 a{
+    color: #000;
     text-decoration: none;
 }
+
+a:hover{
+    color: #8bb532;    
+}
+
 h3 a{
     color: black;    
 }
@@ -56,6 +62,27 @@ h3 a span{
      padding: 0;
      list-style: none;
 }
+ .brosjyre{
+     text-align: center;
+     margin-top: 4em;
+ }
+ 
+ .brosjyre hr{
+     padding: 0;
+     margin: 0;
+ }
+
+ .brosjyre img{
+     margin: auto;
+     display: block;
+ }
+
+ 
+
+ .download img{
+  position: relative;
+  top: 6px;
+ }
 
  
 /*
