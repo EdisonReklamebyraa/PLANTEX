@@ -355,22 +355,15 @@ ul.pure-g li.pos_6{
 .PhotoBanner {
     background: transparent url('../images/Plantex_shutterstock_27332227.jpg') 50% 50% no-repeat fixed;
     background-size: cover;
+    -webkit-background-size:cover;
+                                
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/Plantex_shutterstock_27332227.jpg', sizingMethod='scale');
     height: 200px;
     width: 100%;
     display: table;
     color: #FFF;
 }
-
- @media (max-width: @iphone-screen) {
-     
-     .PhotoBanner {
-
-         background-size: scroll;
-
-     }
-
- }
+ 
 
 .PhotoBanner legend{
     font-size: 2rem;
