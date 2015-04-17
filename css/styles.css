@@ -370,6 +370,16 @@ ul.pure-g li.pos_6{
     color: #FFF;
 }
 
+ @media (max-width: @iphone-screen) {
+     
+     .PhotoBanner {
+
+         background-size: scroll;
+
+     }
+
+ }
+
 .PhotoBanner legend{
     font-size: 2rem;
     font-weight: bold;
