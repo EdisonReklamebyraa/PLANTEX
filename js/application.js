@@ -31,6 +31,62 @@ for(var i = 0; i < dts.length; i++) {
     })
 }
 
+    var t = document.getElementById('KunderTable');
+    new Tablesort(t);
+
+
+    var input = document.getElementById('Filter');
+
+    input.addEventListener(
+        'input',
+        function(){
+            if(input.value===""){
+                for(var i = 0; i < t.rows.length; i++){
+                    t.rows[i].classList.remove("filterShow");
+                    t.rows[i].classList.remove("filterHide");
+                }
+                return ;
+            }
+
+            for(var i = 0; i < t.rows.length; i++)
+            {
+
+                if(t.rows[i].innerHTML.search(new RegExp(input.value, "i")) !== -1){
+                    t.rows[i].classList.add("filterShow");
+                    t.rows[i].classList.remove("filterHide");
+                } else{
+                    t.rows[i].classList.remove("filterShow");
+                    t.rows[i].classList.add("filterHide");
+                }
+            }
+        })  ;
+
+
+    var fylke = document.getElementById("Fylke");
+    fylke.onchange=function (){
+        debugger;
+        if(fylke.value === "- Alle fylkene -"){
+            for(var i = 0; i < t.rows.length; i++){
+                t.rows[i].classList.remove("fylkeShow");
+                t.rows[i].classList.remove("fylkeHide");
+            }
+            return ;
+        }
+        for(var i = 0; i < t.rows.length; i++)
+        {
+
+
+            if(t.rows[i].innerHTML.search(new RegExp(fylke.value, "i")) !== -1){
+
+                t.rows[i].classList.add("fylkeShow");
+                t.rows[i].classList.remove("fylkeHide");
+            } else{
+                t.rows[i].classList.remove("fylkeShow");
+                t.rows[i].classList.add("fylkeHide");
+            }
+        }
+
+    };
 
 
 })(this, this.document);
