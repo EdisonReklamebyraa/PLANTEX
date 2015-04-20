@@ -837,6 +837,12 @@ ul.pure-g li.pos_6{
 
 @media (max-width: 64em) {
 
+
+    #KunderTable{
+        font-size: 0.7em;
+    }
+
+    
     a.brand{
         text-align: left;
         padding: 0 1rem ;
