@@ -78,52 +78,6 @@
 
 
 
-   
-    
-    <div id="Kunder">
-      <div class="content">
-
-        <h3>Forhandlerliste</h3>
-         <form class="pure-form">
-           <fieldset>
-                 <label for="Filter">Søk: </label>
-                 <input id="Filter" type="text" placeholder="Søk forhandlerliste">
-           
-                 <label for="state">Fylke: </label>
-                 <select id="Fylke">
-                   <option>- Alle fylkene -</option>
-                   {% for fylke in site.data.fylke %}
-                   <option>{{fylke.Name}}</option>
-                   {% endfor %}
-                 </select>
-                      
-           </fieldset>
-           
-         </form>
-         <table id="KunderTable" class="pure-table pure-table-horizontal">
-           <thead>
-             <tr>
-               <th>Kjede</th>
-               <th>Fylke</th>
-               <th>Sted</th>
-             </tr>
-           </thead>
-
-          <tbody>
-            {% for kunder in site.data.kunder %}
-
-            <tr>
-              <td>{{kunder.Kjede}}</td>
-              <td>{{kunder.Fylke}}</td>
-              <td> {{kunder.Gate}}, {{kunder.Sted}}</td>
-            </tr>
-
-            {% endfor %}
-          </tbody>
-        </table>
-
-      </div>
-    </div>
     
 
     <div id="Footer" class="light_grey footer">
