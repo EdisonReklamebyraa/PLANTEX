@@ -833,13 +833,11 @@ ul.pure-g li.pos_6{
 
     }
 
-
     ul.pure-g li.pos_1{
         -webkit-box-shadow: #cbcbcb 1px 0px 1px, rgba(0,0,0,0.2) 0 3px 20px -2px ;
                 box-shadow: #cbcbcb 1px 0px 1px, rgba(0,0,0,0.2) 0 3px 20px -2px ;
     }
-
-
+    
      .menu ul.pure-g li{
         vertical-align: middle;
         background: #FFFFFF;
@@ -851,9 +849,6 @@ ul.pure-g li.pos_6{
         float: left;
         margin-left: -1px;
      }
-
-     
-  
 }
 
 @media (max-width: 64em) {
