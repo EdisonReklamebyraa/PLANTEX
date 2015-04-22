@@ -32,7 +32,7 @@ for(var i = 0; i < dts.length; i++) {
 }
 
     var t = document.getElementById('KunderTable');
-    new Tablesort(t);
+    
 
 
     var input = document.getElementById('Filter');

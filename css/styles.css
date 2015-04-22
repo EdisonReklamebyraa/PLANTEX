@@ -84,6 +84,9 @@ h3 a span{
   top: 6px;
  }
 
+ #KunderTable {
+     border: 0;
+ }
  
  #KunderTable tr.filterShow{
      display: table-row;
@@ -411,11 +414,38 @@ ul.pure-g li.pos_6{
     color: #181818;
 }
 
-
-#Footer{
-    margin-top: 2em;    
+#Kunder {
+	padding: 1em 0 4em;
+	margin: 4em 0 0;
 }
 
+.pure-form label {
+	margin: 0.5em 0;
+	display: block;
+}
+.pure-form fieldset {
+	width: 100%;
+}
+
+.pure-form fieldset p.last-p {
+	padding-right: 0;
+}
+
+.pure-form select, .pure-form input {
+	width: 100%;
+}
+
+table {
+	width: 100%;
+	background: white;
+}
+
+.pure-table td {
+	padding: 1em 1em 0.8em;
+}
+#Footer, #Footer .f-content {
+    margin-top: 0em;    
+}
 
 
 /*
@@ -833,11 +863,13 @@ ul.pure-g li.pos_6{
 
     }
 
+
     ul.pure-g li.pos_1{
         -webkit-box-shadow: #cbcbcb 1px 0px 1px, rgba(0,0,0,0.2) 0 3px 20px -2px ;
                 box-shadow: #cbcbcb 1px 0px 1px, rgba(0,0,0,0.2) 0 3px 20px -2px ;
     }
-    
+
+
      .menu ul.pure-g li{
         vertical-align: middle;
         background: #FFFFFF;
@@ -849,6 +881,9 @@ ul.pure-g li.pos_6{
         float: left;
         margin-left: -1px;
      }
+
+     
+  
 }
 
 @media (max-width: 64em) {
